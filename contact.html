@@ -7,12 +7,37 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-            padding: 20px;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         .container {
             max-width: 600px;
-            margin: auto;
+            margin: 20px auto;
             background: white;
             padding: 20px;
             border-radius: 5px;
@@ -20,6 +45,7 @@
         }
         h2 {
             text-align: center;
+            color: #007BFF;
         }
         .form-group {
             margin-bottom: 15px;
@@ -46,12 +72,32 @@
         button:hover {
             background-color: #218838;
         }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #007BFF;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Us</h1>
+</header>
+
 <div class="container">
-    <h2>Contact Us</h2>
+    <h2>Get in Touch</h2>
     <form action="YOUR_FORM_ACTION_URL" method="post">
         <div class="form-group">
             <label for="name">Name:</label>
@@ -68,6 +114,10 @@
         <button type="submit">Send Message</button>
     </form>
 </div>
+
+<footer>
+    <p>&copy; 2024 Your Company Name</p>
+</footer>
 
 </body>
 </html>
